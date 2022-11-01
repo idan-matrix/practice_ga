@@ -1,0 +1,9 @@
+name: Issues
+on: [issues, workflow_dispatch]
+
+jobs:
+  workflow-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo github context
+        run: echo "${{ github }}"
